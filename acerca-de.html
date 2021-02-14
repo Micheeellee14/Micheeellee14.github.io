@@ -17,7 +17,7 @@
 .conteiner{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 80px 800px;
+    grid-template-rows: 80px 350px 350px 390px 100px;
     grid-gap:3px;
 }
 
@@ -51,14 +51,39 @@
 
 .menu-item:hover{
     color: #6930c3;
+    text-decoration: line-through;
 }
-.bottom{
-  grid-column: 1 / -1;
+.left{
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 2px;
+    margin-top: 5%;
 }
-.bottom-conteiner{
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-top: 3px;
+.mifoto{
+    width: 300px;
+    height: 295px;
+    margin-left: 1%;
+}
+.right{
+    grid-column: 1 / -1;
+    margin-top: 10px;
+    text-align: center;
+}
+.pintura{
+    width: 250px;
+    height: 330px;
+    margin-left: 45%;
+    margin-top: 10%;
+}
+.box h2{
+    margin-top: 20%;
+}
+.footer{
+    grid-column: 1 / -1;
+    margin-top: 3%;
+    text-align: center;
 }
     </style>
   </head>
@@ -71,16 +96,36 @@
                   </div>
                   <nav class="menu">
                       <a class="menu-item" href="index.html">Home</a>
-                      <a class="menu-item" href="">Proyectos</a>
-                      <a class="menu-item" href="">Contacto</a>
+                      <a class="menu-item" href="proyectos.html">Proyectos</a>
+                      <a class="menu-item" href="contacto.html">Contacto</a>
                   </nav>
                 </div>
         </div>
-        <div class="bottom">
-            <div class="bottom-conteiner">
-               <p>Michelle Quintero (Managua, Nicaragua; 01 de febrero del 2003)</p>
+        <div class="left">
+            <p> Michelle Quintero</p><br>
+            <p> Nicaragüense</p><br>
+            <p> 18 años</p><br>
+            <p> Estudiante de bachillerato en turismo</p><br>
+            <p> Curso de programación</p><br>
+                 </div>
+             <div class="right">
+                <img class="mifoto" src="https://pbs.twimg.com/media/EuIVwBzXEAEtF3J?format=jpg&name=large"/>
+                <p> Una persona creativa, honesta, comprometida con sus deberes y de carácter firme.</p>
             </div>
+            <div class="box">
+                <img class="pintura" src="https://i2.wp.com/www.academiac10.com/wp-content/uploads/2012/03/oleos-acrilicos-ilustracion-aerografia-academia-c10-1asvxc2.jpg?fit=166%2C253&quality=100&ssl=1"/>
+            </div>
+            <div class="box">
+                <h2>
+                    <pre>En mi tiempo libre me gustar pintar</pre>
+                    <pre>Ver series, animes y doramas</pre>
+                    <pre>Me gusta leer</pre>
+                    <pre>Y comer pollo frito:)</pre>
+                </h2>
+            </div>
+        <div class="footer">
+            <p> @michellequintero 2021</p>
         </div>
-    </div>
   </body>
 </html>
+
